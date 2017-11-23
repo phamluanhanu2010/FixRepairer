@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lout_container_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/control_input_text_h"
+    android:layout_below="@+id/tv_total_title"
+    android:gravity="center"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="0.0dp"
+
+        android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+        android:layout_weight="1"
+        android:text="Nhận việc" />
+
+    <TextView
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="0.0dp"
+        android:layout_weight="1"
+        android:text="+1" />
+
+    <TextView
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="0.0dp"
+        android:layout_weight="1"
+        android:lines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="Sửa máy tính, cài đặt lại hệ điều hành" />
+
+    <!--<TextView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="0.5sp"-->
+    <!--android:background="@android:color/darker_gray" />-->
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/time_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/confirm_ui_padding_w">
+
+    <LinearLayout
+        android:id="@+id/lout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/choice_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginRight="@dimen/confirm_ui_padding_w" />
+
+        <NumberPicker
+            android:id="@+id/choice_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_w" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/confirm_ui_padding_w"
+        android:paddingTop="@dimen/confirm_ui_padding_w">
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:textColor="@android:color/white"
+            style="@style/CusButtonTheme"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/confirm_ui_padding_w"
+            android:background="@drawable/ripple_selector_yellow_square"
+            android:text="@string/btn_new_job_accept" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+            style="@style/CusButtonTheme"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@drawable/ripple_selector_yellow_square"
+            android:text="@string/btn_new_job_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

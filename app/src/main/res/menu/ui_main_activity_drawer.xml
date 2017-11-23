@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notifi"
+            android:icon="@android:drawable/ic_popup_reminder"
+            android:title="@string/nav_item_notifi" />
+        <item
+            android:id="@+id/nav_job_list"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="@string/nav_item_job_list" />
+        <item
+            android:id="@+id/nav_job_save"
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="@string/nav_item_job_save" />
+        <item
+            android:id="@+id/nav_cho_thue_dung_cu"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/nav_item_cho_thue_dung_cu" />
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/nav_item_invite" />
+        <item
+            android:id="@+id/nav_job_history"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/nav_item_job_history" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/nav_item_support" />
+    </group>
+
+    <!--<tmp_search_history android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<tmp_search_history-->
+                <!--android:id="@+id/nav_invite"-->
+                <!--android:icon="@android:drawable/ic_dialog_map"-->
+                <!--android:title="@string/nav_item_invite" />-->
+            <!--<tmp_search_history-->
+                <!--android:id="@+id/nav_job_history"-->
+                <!--android:icon="@android:drawable/ic_dialog_map"-->
+                <!--android:title="@string/nav_item_job_history" />-->
+            <!--<tmp_search_history-->
+                <!--android:id="@+id/nav_support"-->
+                <!--android:icon="@android:drawable/ic_dialog_map"-->
+                <!--android:title="@string/nav_item_support" />-->
+        <!--</menu>-->
+    <!--</tmp_search_history>-->
+
+</menu>

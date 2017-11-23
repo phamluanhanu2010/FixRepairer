@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lout_container_level"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lout_container_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lout_container_btn"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lout_container_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_level"
+                style="@style/CusTextViewTitleTheme"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:text="@string/title_upgrade_level"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_total_transaction"
+                style="@style/CusTextViewContentTheme"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:text="@string/title_upgrade_level_total_transaction" />
+
+            <TextView
+                android:id="@+id/tv_total_revenue"
+                style="@style/CusTextViewContentTheme"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:text="@string/title_upgrade_level_total_revenue" />
+
+
+            <TextView
+                android:id="@+id/tv_total_bonus_score"
+                style="@style/CusTextViewContentTheme"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:text="@string/title_upgrade_level_total_bonus_score" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lout_container_content_content"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_level_content_excellent"
+                style="@style/CusTextViewTitleTheme"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:text="@string/title_upgrade_level_total_upgrade_excellent"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_in_app_menu"
+                android:layout_height="@dimen/size_icon_in_app_menu"
+                android:layout_toRightOf="@+id/tv_level_content_excellent"
+                android:src="@drawable/ic_level_5" />
+
+            <TextView
+                android:id="@+id/tv_total_transaction_content"
+                style="@style/CusTextViewContentTheme"
+                android:layout_below="@+id/tv_level_content_excellent"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:text="10" />
+
+
+            <TextView
+                android:id="@+id/tv_total_revenue_content"
+                style="@style/CusTextViewContentTheme"
+                android:layout_below="@+id/tv_total_transaction_content"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:text="10.000.000 (VNĐ)" />
+
+
+            <TextView
+                android:id="@+id/tv_total_bonus_score_content"
+                style="@style/CusTextViewContentTheme"
+                android:layout_below="@+id/tv_total_revenue_content"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:text="500.000 (VNĐ)" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_total_depcription"
+        style="@style/CusTextViewContentTheme"
+        android:layout_below="@+id/lout_container_content"
+        android:layout_marginTop="@dimen/confirm_ui_padding_w"
+        android:text="@string/title_upgrade_level_total_description" />
+
+    <TextView
+        android:id="@+id/tv_total_title"
+        style="@style/CusTextViewTitleTheme"
+        android:layout_below="@+id/tv_total_depcription"
+        android:layout_marginTop="@dimen/confirm_ui_padding_w"
+        android:text="@string/title_upgrade_level_total_diary"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/lout_container_title"
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_input_text_h"
+        android:layout_below="@+id/tv_total_title"
+        android:layout_marginTop="@dimen/confirm_ui_padding_w"
+        android:background="@color/color_gray"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:layout_weight="1"
+            android:text="@string/title_upgrade_level_total_activity"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:layout_weight="1"
+            android:text="@string/title_upgrade_level_total_point"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:layout_weight="1"
+            android:text="@string/title_user_info"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lout_container_title">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

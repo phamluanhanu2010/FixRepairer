@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lout_container_title"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="@dimen/control_input_text_h"
+    android:layout_below="@+id/tv_total_title"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="0.0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+        android:layout_marginRight="@dimen/confirm_ui_padding_w"
+        android:text="Nhận việc" />
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        style="@style/CusImageIconAppTheme"
+        android:background="@drawable/ic_level_5"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="0.0dp"
+        android:layout_marginRight="@dimen/confirm_ui_padding_w"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="+1" />
+
+
+</LinearLayout>

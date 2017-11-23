@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_appid">631710850315464</string>
+
+    <string name="gcm_sender_id">1026368002368</string>
+    <string name="gcm_apikey">AIzaSyAl1rYZtHv68JUgdpcVIUXGR2e2ygWOz2s</string>
+
+    <!--<string name="gcm_sender_id">746477395359</string>-->
+    <!--<string name="gcm_apikey">AIzaSyDhg8WMtplQ1OapV9yc3NCEKRu6yjtWTzI</string>-->
+
+    <string name="map_google_api_key">AIzaSyDNGsyqyGDnqpZQ_eTPWR_mFerMB9EfWbk</string>
+</resources>

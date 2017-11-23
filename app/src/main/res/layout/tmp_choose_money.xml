@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+        android:layout_marginRight="@dimen/confirm_ui_padding_w"
+        android:layout_marginTop="@dimen/confirm_ui_padding_w"
+        android:background="@drawable/background_border_while"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/size_icon_in_app_menu"
+            android:layout_height="@dimen/size_icon_in_app_menu"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/ic_money" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/CusTextViewContentTheme"
+            android:layout_marginLeft="5.0dp"
+            android:layout_weight="4"
+            android:text="20.000/giờ" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

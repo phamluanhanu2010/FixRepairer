@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_backgroud_splash"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.strategy.intecom.vtc.fixrepairer.view.UIConfirmChooseService">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_back"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        android:paddingLeft="@dimen/confirm_ui_padding_w"
+        android:paddingRight="@dimen/confirm_ui_padding_w">
+
+        <RelativeLayout
+            android:id="@+id/lout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/confirm_ui_padding_h">
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/confirm_ui_button_option"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/confirm_ui_padding_w"
+                android:src="@drawable/ic_banner" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/CusTextViewContentTheme"
+                android:layout_below="@+id/img_avatar"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:gravity="center"
+                android:text="@string/confirm_signin_welcome"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_field"
+                style="@style/CusEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_input_text_h"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginTop="20.0dp"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edt_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/confirm_ui_choose_service"
+                android:layout_below="@+id/tv_field"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:background="@drawable/ripple_selector_gray"
+                android:gravity="top"
+                android:hint="@string/title_user_info_forme"
+                android:paddingLeft="@dimen/confirm_ui_padding_w"
+                android:paddingTop="@dimen/confirm_ui_padding_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_text_app_content" />
+
+            <LinearLayout
+                android:id="@+id/lout_container_dieukhoan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_input_text_h"
+                android:layout_below="@+id/edt_description">
+
+                <CheckBox
+                    android:id="@+id/cb_dieukhoan"
+                    android:layout_width="@dimen/control_input_text_h"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/checkbox_dieukhoan"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="@dimen/size_text_app_content"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_dieukhoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/confirm_info_profile_dieukhoan"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/CusButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/lout_container_dieukhoan"
+                android:layout_marginTop="10.0dp"
+                android:background="@drawable/ripple_selector_yellow"
+                android:gravity="center"
+                android:text="@string/confirm_info_profile_btn_register"
+                android:textAllCaps="true" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/size_icon_in_app_menu"
+        android:layout_height="@dimen/size_icon_in_app"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+        android:layout_marginTop="@dimen/confirm_ui_padding_h"
+        android:paddingRight="@dimen/confirm_ui_padding_h"
+        android:src="@drawable/ic_back_while" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:clickable="true"
+    android:fitsSystemWindows="false">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/lout_container_title"
+            layout="@layout/app_bar_home_back_search" />
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lout_container_title">
+
+            <ListView
+                android:id="@+id/lst_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animationCache="false"
+                android:background="@color/color_gray"
+                android:scrollbars="vertical"
+                android:scrollingCache="false"
+                android:smoothScrollbar="true" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/lout_container_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lout_container_title"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_input_text_h"
+                android:background="@color/color_yellow"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/title_message_enable_noti"
+                    android:textStyle="normal" />
+
+                <Switch
+                    android:id="@+id/switch_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/confirm_ui_padding_w" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1sp"
+                android:background="@color/color_transparent_back" />
+
+            <TextView
+                android:id="@+id/tv_sort"
+                style="@style/CusEditTextTheme"
+                android:background="@color/color_yellow"
+                android:gravity="right|center"
+                android:hint="@string/title_sort_by"
+                android:paddingRight="@dimen/confirm_ui_padding_w"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:src="@drawable/ic_pinmap_normal"
+        app:backgroundTint="@color/color_yellow" />
+
+</android.support.design.widget.CoordinatorLayout>

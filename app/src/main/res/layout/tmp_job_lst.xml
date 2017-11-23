@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_gray"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+        android:layout_marginRight="@dimen/confirm_ui_padding_w"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_border_while"
+        android:orientation="vertical"
+        android:paddingBottom="5.0dp">
+
+        <LinearLayout
+            android:id="@+id/lout_container_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_promo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/ripple_selector_yellow_border"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/btn_new_job_promo"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_times"
+                style="@style/CusTextViewContentLinkTheme"
+                android:layout_marginRight="@dimen/confirm_ui_padding_w"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Thursday, May 19" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5sp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/confirm_ui_padding_w"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:id="@+id/lout_container_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top">
+
+
+                <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+                    android:id="@+id/img_icon_job"
+                    android:layout_width="@dimen/size_icon_in_app"
+                    android:layout_height="@dimen/size_icon_in_app"
+                    android:layout_below="@+id/lout_container_title"
+                    android:src="@drawable/ic_congcu" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/CusTextViewTitleTheme"
+                    android:layout_weight="1"
+                    android:text="Sửa máy tính" />
+
+
+                <CheckBox
+                    android:id="@+id/img_icon_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_icon_in_app"
+                    android:button="@drawable/check_save_job"
+                    android:checked="true"
+                    android:visibility="gone" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/CustomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_container_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lout_container_title"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:background="@android:color/transparent"
+                android:gravity="center|left">
+
+                <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+                    android:id="@+id/img_icon_location"
+                    android:layout_width="@dimen/size_icon_in_app"
+                    android:layout_height="@dimen/size_icon_in_app"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_weight="1"
+                    android:text="23 Lạc trung" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/CusTextViewContentTheme"
+                    android:text="150,000" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/CusTextViewContentTheme"
+                android:layout_below="@+id/lout_container_location"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:text="Hoàng Hà" />
+
+            <TextView
+                android:id="@+id/tv_phone_num"
+                style="@style/CusTextViewContentTheme"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lout_container_location"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:layout_toRightOf="@+id/tv_name"
+                android:gravity="right"
+                android:text="(+84) 94 818 77 99"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

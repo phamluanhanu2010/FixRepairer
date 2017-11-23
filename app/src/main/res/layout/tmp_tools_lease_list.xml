@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="wrap_content"
+    android:background="@color/color_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:layout_margin="5.0dp"
+        android:background="@drawable/background_border_while"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+            android:id="@+id/img_icon"
+            android:layout_width="0.0dp"
+            android:layout_height="@dimen/size_icon_in_app_menu"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_suachua" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/CusTextViewContentTheme"
+            android:layout_marginLeft="5.0dp"
+            android:layout_weight="4"
+            android:text="Búa tạ" />
+
+        <TextView
+            android:layout_width="0.5sp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_count"
+            style="@style/CusTextViewContentTheme"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2" />
+
+        <TextView
+            android:layout_width="0.5sp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+            android:id="@+id/img_icon_money"
+            android:layout_width="0.0dp"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_money" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/CusTextViewContentTheme"
+            android:layout_marginLeft="5.0dp"
+            android:layout_weight="3"
+            android:text="100,000/giờ" />
+    </LinearLayout>
+
+
+</LinearLayout>
+

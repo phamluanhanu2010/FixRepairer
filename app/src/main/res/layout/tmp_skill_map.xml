@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lout_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="@dimen/size_icon_in_app_menu"
+            android:layout_height="@dimen/size_icon_in_app_menu"
+            android:padding="@dimen/padding"
+            android:src="@drawable/ic_avatar_default" />
+
+        <TextView
+            android:id="@+id/tv_skill_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="Sửa nhà"
+            android:textSize="@dimen/size_text_app_content"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_badges"
+        android:layout_width="@dimen/size_icon_in_app"
+        android:layout_height="@dimen/size_icon_in_app"
+        android:layout_alignParentRight="true"
+        android:padding="3dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="10"
+        android:background="@drawable/ripple_border"
+        android:textSize="@dimen/size_text_app_content" />
+</RelativeLayout>

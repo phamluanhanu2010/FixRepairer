@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="wrap_content"
+    android:background="@color/color_yellow"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_home" />
+
+    <TextView
+        android:id="@+id/tv_sort"
+        style="@style/CusEditTextTheme"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:gravity="right|center"
+        android:hint="Sorted by: Newest"
+        android:paddingRight="@dimen/confirm_ui_padding_w"
+        android:textStyle="normal" />
+</RelativeLayout>

@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">SUADO Partner</string>
+
+    <string name="navigation_drawer_open">Mở Menu</string>
+    <string name="navigation_drawer_close">Đóng Menu</string>
+
+    <string name="nav_item_notifi">Cài đặt</string>
+    <string name="nav_item_job_save">Việc lưu</string>
+
+    <string name="nav_item_job_history">Lịch sử việc</string>
+    <string name="nav_item_job_like">Yêu thích</string>
+    <string name="nav_item_job_list">Lịch làm việc</string>
+    <string name="nav_item_invite">Mời bạn bè</string>
+    <string name="nav_item_support">Hỗ trợ</string>
+    <string name="nav_item_cho_thue_dung_cu">Cho thuê dụng cụ - Sửa chữa</string>
+    <string name="nav_item_logout">Thoát</string>
+    <string name="nav_item_change_password">Thay đổi mật khẩu</string>
+
+    <string name="confirm_signin_welcome">Cộng đồng chia sẻ công cụ - công việc sửa chữa tại gia</string>
+    <string name="confirm_signin_welcome_confirm">Chào bạn! Xin mời bạn vui lòng</string>
+    <string name="confirm_signin_button_signin">Đăng ký</string>
+    <string name="confirm_signin_button_login">Đăng nhập</string>
+    <string name="confirm_signin_button_next">Tiếp tục</string>
+    <string name="confirm_signin_button_password">Mật khẩu</string>
+    <string name="confirm_signin_button_re_password">Nhập lại mật khẩu</string>
+
+    <string name="confirm_signin_button_option_thue">Thuê công cụ - gọi sửa chữa</string>
+    <string name="confirm_signin_button_option_cho_thue">Cho thuê công cụ - sửa chữa</string>
+
+    <string name="confirm_info_profile_name">Tên</string>
+    <string name="confirm_info_profile_full_name">Họ Tên</string>
+    <string name="confirm_info_profile_cmnd">Số CMTND</string>
+    <string name="confirm_info_profile_address">Địa chỉ liên lạc</string>
+    <string name="confirm_info_profile_phone_num">Số điện thoại</string>
+    <string name="confirm_info_profile_email">Email</string>
+    <string name="confirm_info_profile_city">Thành phố</string>
+    <string name="confirm_info_profile_district">Quận/Huyện</string>
+    <string name="confirm_info_profile_service">Dịch vụ</string>
+    <string name="confirm_info_profile_dieukhoan">Tôi đã đọc và đồng ý điều khoản này</string>
+    <string name="confirm_info_profile_btn_register">Sẵn sàng làm việc</string>
+
+    <string name="confirm_close_dialog">Đóng trong vòng %1$s giây</string>
+
+    <string name="confirm_no_internet_connect">Không có kết nối! Xin vui lòng kiểm tra lại kết nối Wifi/3G/ và định vị GPS</string>
+    <string name="confirm_server_not_found">Không thể kết nối tới Server</string>
+    <string name="confirm_server_timeout">Không có phản hồi từ Server</string>
+    <string name="confirm_server_error_connect">Lỗi kết nối</string>
+    <string name="confirm_message_choice_job">Xin vui lòng chọn công việc</string>
+    <string name="gps_network_not_enabled">Xin vui lòng kiểm tra bật định vị GPS và kết nối Wifi/3G để có được những thông tin về công việc một cách chính xác!</string>
+    <string name="open_location_settings">Bật GPS</string>
+    <string name="open_network_settings">Bật Wifi/3G</string>
+
+    <string name="btn_service_list_suado">Sửa đồ</string>
+    <string name="btn_service_list_thuedo">Thuê đồ</string>
+
+    <string name="btn_new_job_accept">Chấp nhận</string>
+    <string name="btn_new_job_cancel">Từ chối</string>
+    <string name="btn_new_job_promo">Khuyến mại</string>
+
+    <string name="btn_send_confirm">Gửi xác nhận</string>
+    <string name="btn_change_password">Đổi mật khẩu</string>
+    <string name="btn_datdiachi">Đặt địa chỉ</string>>
+
+    <string name="btn_job_detail_call">Call</string>
+    <string name="btn_job_detail_sms">SMS</string>
+    <string name="btn_job_detail_map">Map</string>
+    <string name="btn_job_detail_nhanviec">Nhận việc</string>
+    <string name="btn_job_detail_danhanviec">Đã nhận việc</string>
+    <string name="btn_job_detail_map_diennuoc">Điện nước</string>
+    <string name="btn_job_detail_map_maytinh">Máy tính</string>
+    <string name="btn_job_detail_map_congcu">Công cụ</string>
+    <string name="btn_job_detail_success">Hoàn thành</string>
+    <string name="btn_job_detail_cancel">Bỏ việc</string>
+    <string name="btn_job_cancel">Bị hủy</string>
+    <string name="btn_job_comming">Đang đến</string>
+    <string name="btn_job_accepted">Đã nhận</string>
+    <string name="btn_job_comming_ok">Đang trên đường đến</string>
+    <string name="btn_job_go">Bắt đầu đi</string>
+    <string name="btn_job_go_run">Bắt đầu làm việc</string>
+    <string name="btn_job_go_run_">Đang làm việc</string>
+    <string name="btn_job_cancel_">Đã hủy</string>
+    <string name="btn_job_expried">Đã hết hạn</string>
+    <string name="btn_job_cancel_job">Hủy việc</string>
+    <string name="btn_job_user_cancel_job">Người dùng đã hủy đặt</string>
+
+    <string name="btn_upgrade_level">Cấp độ của tôi</string>
+    <string name="btn_upgrade_level_rule">Quy tắc phân cấp</string>
+    <string name="title_confirm_change_location">Bạn muốn thay đổi địa điểm hiện tại?</string>
+
+    <string name="btn_tools_lease_list">Danh sách</string>
+    <string name="btn_tools_lease_renter">Người thuê</string>
+    <string name="btn_tools_lease_history">Lịch sử</string>
+    <string name="btn_tools_lease_success">Đăng tin</string>
+    <string name="btn_job_detail">Chi tiết</string>
+
+    <string name="btn_yes">Có</string>
+    <string name="btn_no">Không</string>
+
+    <string name="confirm_signin_passcode">Bạn không nhận được mã?</string>
+    <string name="btn_get_passcode">Lấy lại mã xác nhận</string>
+
+    <string name="title_upgrade_level_point">Số điểm cần</string>
+    <string name="title_upgrade_level">Cấp độ</string>
+    <string name="title_upgrade_level_total_transaction">Tổng giao dịch:</string>
+    <string name="title_upgrade_level_total_revenue">Tổng doanh thu:</string>
+    <string name="title_upgrade_level_total_bonus_score">Điểm thưởng</string>
+    <string name="title_upgrade_level_total_description">Cách tính = điểm người dùng x 0.2 + doanh thu x 0.4 + số giao dịch  0.4</string>
+    <string name="title_upgrade_level_total_diary">Nhật ký nâng cấp</string>
+    <string name="title_upgrade_level_total_activity">Hoạt động</string>
+    <string name="title_upgrade_level_total_point">Điểm</string>
+    <string name="title_upgrade_level_total_upgrade">Nâng cấp</string>
+    <string name="title_upgrade_level_total_upgrade_excellent">Thợ xuất sắc</string>
+    <string name="title_old_password">Nhập mật khẩu cũ</string>
+    <string name="title_old_password_error">Nhập mật khẩu cũ không chính xác</string>
+    <string name="title_my_job"> Công việc</string>
+
+    <string name="title_job_detail_info_customer">Thông tin khách hàng</string>
+    <string name="title_job_detail_phonenum">Điện thoại:</string>
+    <string name="title_job_detail_requirement">Yêu cầu</string>
+    <string name="title_job_detail_time">Thời gian sửa</string>
+    <string name="title_job_detail_jobnum">Job Number</string>
+    <string name="title_rules">Điều khoản</string>
+
+    <string name="title_list_job_search">Search</string>
+    <string name="title_message_enable_noti">Bật/tắt nhận thông báo việc</string>
+    <string name="title_search_cong_cu">Nhập để tìm tên công cụ</string>
+    <string name="title_tools_lease_name">Tên công cụ</string>
+    <string name="title_tools_lease_price">Chi phí</string>
+    <string name="title_tools_lease_address">Địa chỉ</string>
+    <string name="title_tools_lease_shiper">Ship đồ</string>
+    <string name="title_my_location">Địa điểm của tôi</string>
+    <string name="title_message_on_working">Bạn đã bật nhận thông báo việc. Vui lòng truy cập ứng dụng thường xuyên để cập nhật các công việc mới</string>
+    <string name="title_message_off_working">Bạn đã tắt nhận thông báo việc mới. Vui lòng thay đổi trạng thái để nhận việc từ hệ thống</string>
+
+    <string name="title_user_info_member_num">Member number</string>
+    <string name="title_user_info">Thông tin</string>
+    <string name="title_user_info_service">Dịch vụ</string>
+    <string name="title_user_info_time_space">Thời gian trống</string>
+    <string name="title_user_info_forme">Giới thiệu bản thân</string>
+    <string name="title_user_info_choose_service">Chọn lĩnh vực chuyên môn</string>
+    <string name="title_confirm_exists_account">Bạn chưa có tài khoản? <b>Đăng ký ngay?</b></string>
+    <string name="title_confirm_exists_account_register_now">Đăng ký ngay!</string>
+    <string name="title_forgot_password">Quên mật khẩu?</string>
+
+    <string name="title_forgot_new_password">Nhập mật khẩu mới</string>
+    <string name="title_forgot_new_re_password">Xác nhận mật khẩu mới</string>
+
+    <string name="title_user_info_rating_review">Overall Rating</string>
+    <string name="title_user_info_rating_review_nhanxet">nhận xét</string>
+    <string name="title_user_info_rating_review_distribution">Ratings Distribution</string>
+    <string name="title_user_info_rating_review_post_comment">Post Comment</string>
+    <string name="title_user_info_rating_review_count_rating">%1$s Rating</string>
+
+    <string name="update_profile_complete">Cập nhật thông tin cá nhân thành công!</string>
+    <string name="update_profile_avatar_error">Cập nhật ảnh đại diên bị lỗi!</string>
+    <string name="title_tools_lease_total">Tổng thu:</string>
+
+    <string name="title_dialog_choice">Lựa chọn</string>
+    <string name="title_dialog_message">Thông báo</string>
+    <string name="title_dialog_confirm">Xác nhận</string>
+    <string name="title_dialog_process_confirm">Đang xử lý…</string>
+    <string name="title_dialog_process_success">Thành công</string>
+
+    <string name="title_dialog_choice_library">Chọn trong thư viện</string>
+    <string name="title_dialog_choice_capture">Chụp ảnh</string>
+
+
+    <string name="title_description_job_hint">Mô tả chi tiết công việc</string>
+    <string name="title_money_job_hint">100.000 VNĐ</string>
+    <string name="title_time_job_hint">13/12/2016</string>
+
+    <string name="title_sort_by_title">Sắp xếp</string>
+    <string name="title_sort_by">Sắp xếp theo: %1$s</string>
+    <string name="title_sort_by_new">Mới nhất</string>
+    <string name="title_sort_by_nearby">Gần nhất</string>
+    <string name="title_sort_by_all">Tất cả</string>
+    <string name="title_currency">%1$s <b>VNĐ</b></string>
+
+    <string name="title_confirm_code">Nhập mã xác nhận</string>
+    <string name="title_bar_danhmuc">Danh mục</string>
+
+    <string name="title_confirm_code_error">Mã xác nhận nhập không chính xác</string>
+
+    <string name="title_guide_new_job">Chạm vào để đăng tin</string>
+    <string name="title_new_job">Đăng tin cho thuê</string>
+
+    <string name="title_service_sua_nha">Sửa nhà</string>
+    <string name="title_service_sua_nha_content">Trần, vách, sơn nhà, ốp lát, lắp mái tôn, sửa tường rào</string>
+
+    <string name="title_service_sua_diennuoc">Sửa chữa điện nước</string>
+    <string name="title_service_sua_diennuoc_content">Ống nước, bồn cầu, thoát nước</string>
+
+    <string name="title_service_sua_dienlanh">Sửa chữa điện lạnh</string>
+    <string name="title_service_sua_dienlanh_content">Điều hòa, máy sưởi, tủ lạnh, quạt thông gió,</string>
+
+    <string name="title_service_sua_dientu">Sửa chữa đồ điện tử</string>
+    <string name="title_service_sua_dientu_content">Tivi, loa, đài, quạt điện, Âm li</string>
+
+    <string name="title_service_sua_dogiadung">Sửa chữa đồ gia dụng</string>
+    <string name="title_service_sua_dogiadung_content">Lò vi sóng, bếp ga, nồi cơm điện</string>
+
+    <string name="title_service_sua_dogo">Sửa đồ gỗ</string>
+    <string name="title_service_sua_dogo_content">Bàn ghế, tủ riệu, tủ quần áo, lan can cầu thang</string>
+
+    <string name="title_rating_level_1">Thợ học việc</string>
+    <string name="title_rating_level_2">Thợ cần cù</string>
+    <string name="title_rating_level_3">Thợ tốt</string>
+    <string name="title_rating_level_4">Thợ giỏi</string>
+    <string name="title_rating_level_5">Thợ xuất sắc</string>
+
+
+    <string name="validate_passcode">Nhập mã xác nhận</string>
+    <string name="validate_full_name_null">Xin vui lòng nhập họ tên</string>
+    <string name="validate_full_name_not_valid">Họ và tên không hợp lệ</string>
+    <string name="validate_full_name_wrong_length">Họ và tên phải có độ dài từ 3 đến 32 ký tự</string>
+    <string name="validate_cmtnd">Xin vui lòng nhập số CMTND</string>
+    <string name="validate_address">Xin vui lòng nhập Địa chỉ liên lạc</string>
+    <string name="validate_email">Xin vui lòng nhập đúng định dạng Email</string>
+    <string name="validate_phone_num">Hãy nhập đúng số điện thoại</string>
+    <string name="validate_password">Vui lòng nhập mật khẩu có độ dài từ 6 đến 32 ký tự</string>
+    <string name="validate_re_password">Mật khẩu phải trùng nhau</string>
+    <string name="validate_city_district">Hãy chọn thành phố và Quận Huyện</string>
+    <string name="validate_description">Hãy nhập mô tả, kinh nghiêm về bản thân</string>
+    <string name="validate_service">Hãy chọn dịch vụ mà bạn muốn cung cấp</string>
+    <string name="validate_check_dk">Xin vui lòng chấp nhận điều khoản</string>
+    <string name="validate_check_exist_job">Hiện bạn đang có công việc phải làm ngay, hãy hoàn thành công việc trên</string>
+
+    <string name="title_message_empty_my_book">Hãy cho thuê công cụ để tăng thu nhập nào</string>
+    <string name="title_message_exsit_order">Hiện bạn đã nhận 1 việc cần làm ngay nên không thể nhận thêm công việc khác, hãy nhanh chóng hoàn thành công việc này</string>
+
+    <string name="nav_Support_hint">Vui lòng cho chúng tôi biết ý kiến phản hồi của bạn</string>
+    <string name="btn_Accept">Xác nhận</string>
+    <string name="nav_Support_Secret_Policy">Điều khoản bảo mật</string>
+    <string name="nav_Support_Using_Policy">Điều khoản sử dụng</string>
+    <string name="nav_Support_Version">Phiên bản ứng dụng: V1.0.1</string>
+
+
+    <string name="nav_Invite_Titile">MỜI LÀ CÓ QUÀ</string>
+    <string name="nav_Invite_FB">Chia sẻ link giới thiệu trên Facebook</string>
+    <string name="nav_Invite_SMS">Nhắn mã cho bạn bè để cùng nhận quà</string>
+    <string name="nav_Invite_Clipboard">Sao chép link vào Clipboard</string>
+    <string name="nav_Invite_Guide">Người đăng ký sử dụng link giới thiệu của bạn sẽ \n được nhận 5 lượt thuê/gọi sửa đồ giảm 30k VND \n và bạn cũng vậy. Thật tuyệt vời </string>
+
+</resources>

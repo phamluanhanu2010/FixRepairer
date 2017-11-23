@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_back" />
+
+    <LinearLayout
+        android:id="@+id/lout_container_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/confirm_ui_padding_w"
+        android:paddingLeft="@dimen/confirm_ui_padding_w"
+        android:paddingRight="@dimen/confirm_ui_padding_w"
+        android:paddingTop="@dimen/confirm_ui_padding_h">
+
+        <Button
+            android:id="@+id/btn_my_level"
+            style="@style/CusButtonTheme"
+            android:layout_marginRight="5.0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_yellow_gray"
+            android:text="@string/btn_upgrade_level"
+            android:textAllCaps="false"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_rule_upgrade"
+            style="@style/CusButtonTheme"
+            android:layout_marginLeft="5.0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_yellow_gray"
+            android:text="@string/btn_upgrade_level_rule"
+            android:textAllCaps="false"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <include layout="@layout/tmp_my_level" />
+
+    <include layout="@layout/tmp_my_rule_level"/>
+
+</LinearLayout>

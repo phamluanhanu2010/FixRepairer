@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SUDO Partner</string>
+
+    <string name="navigation_drawer_open">Mở Menu</string>
+    <string name="navigation_drawer_close">Đóng Menu</string>
+
+    <string name="action_settings">Cài đặt</string>
+
+
+    <string name="confirm_signin_welcome">Cộng đồng chia sẻ công cụ - công việc sửa chữa tại gia</string>
+</resources>

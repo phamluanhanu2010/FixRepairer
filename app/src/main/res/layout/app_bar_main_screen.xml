@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.strategy.intecom.vtc.fixrepairer.MainScreen">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_yellow"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:id="@+id/lout_container_title"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/confirm_ui_padding_w"
+                android:paddingTop="@dimen/confirm_ui_padding_w"
+                android:src="@drawable/ic_back"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/edt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btn_home"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:padding="10.0dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_menu_home" />
+
+
+            <ImageView
+                android:id="@+id/btn_tmpBack"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/btn_next"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentRight="true"
+                android:padding="10.0dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/img_banner"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_toEndOf="@+id/btn_tmpBack"
+                android:layout_toLeftOf="@+id/btn_next"
+                android:layout_toRightOf="@+id/btn_tmpBack"
+                android:layout_toStartOf="@+id/btn_next"
+                android:padding="10.0dp"
+                android:src="@drawable/ic_banner_black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/CusTextViewTitleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/btn_tmpBack"
+                android:layout_toLeftOf="@+id/btn_next"
+                android:layout_toRightOf="@+id/btn_tmpBack"
+                android:layout_toStartOf="@+id/btn_next"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Home"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main_screen" />
+
+</android.support.design.widget.CoordinatorLayout>

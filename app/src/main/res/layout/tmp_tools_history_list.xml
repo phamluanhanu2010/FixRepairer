@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="wrap_content"
+    android:background="@color/color_transparent"
+    android:orientation="vertical"
+    android:paddingBottom="5.0dp">
+
+    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/card_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--card_view:cardCornerRadius="4dp">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dp">
+
+        <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+            android:id="@+id/img_avatar"
+            android:layout_width="@dimen/size_icon_in_app_menu"
+            android:layout_height="@dimen/size_icon_in_app_menu"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_suachua" />
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:id="@+id/tv_title"
+            android:layout_toEndOf="@+id/img_avatar"
+            android:layout_toStartOf="@+id/cb_choose"
+            android:text="Sửa máy tính"
+            android:layout_toRightOf="@+id/img_avatar"
+            android:layout_toLeftOf="@+id/cb_choose" />
+
+        <TextView
+            style="@style/CusTextViewContentTheme"
+            android:id="@+id/tv_content"
+            android:text="999 Công việc"
+            android:layout_below="@+id/tv_title"
+            android:layout_toEndOf="@+id/img_avatar"
+            android:layout_toRightOf="@+id/img_avatar" />
+
+        <CheckBox
+            android:id="@+id/cb_choose"
+            android:visibility="gone"
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp"
+        android:background="@android:color/darker_gray"
+        android:elevation="3dp" />
+
+    <!--</android.support.v7.widget.CardView>-->
+</LinearLayout>
+

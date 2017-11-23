@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+        android:layout_marginRight="@dimen/confirm_ui_padding_w"
+        android:layout_marginTop="@dimen/confirm_ui_padding_w"
+        android:background="@drawable/background_border_while"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/confirm_ui_padding_w"
+        android:paddingTop="@dimen/confirm_ui_padding_w">
+
+        <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/size_icon_in_app_menu"
+            android:layout_height="@dimen/size_icon_in_app_menu"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+            android:src="@mipmap/icon_suachua" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/CusTextViewTitleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="Búa tạ" />
+
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/CusTextViewContentTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5.0dp"
+                android:layout_weight="1"
+                android:text="Búa tạ" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0.5sp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_count"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/confirm_ui_padding_w"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+                android:id="@+id/btn_up"
+                android:layout_width="@dimen/size_icon_in_app"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_up" />
+
+
+            <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+                android:id="@+id/btn_down"
+                android:layout_width="@dimen/size_icon_in_app"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_down" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0.5sp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+            android:id="@+id/btn_delete"
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+            android:layout_marginRight="@dimen/confirm_ui_padding_w"
+            android:src="@mipmap/ic_cancel" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

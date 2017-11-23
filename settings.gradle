@@ -1,0 +1,2 @@
+include ':app', ':libraryQuickRT1'
+project(':libraryQuickRT1').projectDir = new File('libraryQuickRT')

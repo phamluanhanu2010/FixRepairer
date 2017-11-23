@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_yellow"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <LinearLayout
+        android:id="@+id/lout_container_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/confirm_ui_padding_w"
+            android:paddingTop="@dimen/confirm_ui_padding_w"
+            android:src="@drawable/ic_back"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="10.0dp"
+            android:src="@drawable/ic_menu_home" />
+
+
+        <ImageView
+            android:id="@+id/btn_tmpBack"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/img_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="10.0dp"
+            android:src="@drawable/ic_banner_black" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Home"
+            android:textColor="@android:color/black" />
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/edt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="10.0dp" />
+    </LinearLayout>
+
+</android.support.design.widget.AppBarLayout>
+

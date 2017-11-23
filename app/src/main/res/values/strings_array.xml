@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_city">
+        <item>Thành Phố</item>
+        <item>Hà Nội</item>
+        <item>TP Hồ Chí Minh</item>
+        <item>Hải Phòng</item>
+        <item>Đà Nẵng</item>
+        <item>Nha Trang</item>
+    </string-array>
+
+
+    <string-array name="array_quan_huyen">
+        <item>Quận</item>
+        <item>Q. Từ Liêm</item>
+        <item>Q. Hà Đông</item>
+        <item>Q. Đống Đa</item>
+        <item>Q. Hoàn Kiếm</item>
+        <item>Q. Hai Bà Trưng</item>
+    </string-array>
+
+    <string-array name="array_service">
+        <item>@string/title_user_info_choose_service</item>
+        <item>Sửa điện nước</item>
+        <item>Sửa máy tính</item>
+        <item>Thợ sửa máy</item>
+    </string-array>
+
+    <string-array name="array_service_job_title">
+        <item>@string/title_service_sua_nha</item>
+        <item>@string/title_service_sua_diennuoc</item>
+        <item>@string/title_service_sua_dienlanh</item>
+        <item>@string/title_service_sua_dientu</item>
+        <item>@string/title_service_sua_dogiadung</item>
+        <item>@string/title_service_sua_dogo</item>
+        <item>@string/title_service_sua_nha</item>
+        <item>@string/title_service_sua_diennuoc</item>
+        <item>@string/title_service_sua_dienlanh</item>
+        <item>@string/title_service_sua_dientu</item>
+        <item>@string/title_service_sua_dogiadung</item>
+        <item>@string/title_service_sua_dogo</item>
+        <item>@string/title_service_sua_nha</item>
+        <item>@string/title_service_sua_diennuoc</item>
+        <item>@string/title_service_sua_dienlanh</item>
+        <item>@string/title_service_sua_dientu</item>
+        <item>@string/title_service_sua_dogiadung</item>
+        <item>@string/title_service_sua_dogo</item>
+    </string-array>
+
+    <string-array name="array_service_job_content">
+        <item>@string/title_service_sua_nha_content</item>
+        <item>@string/title_service_sua_diennuoc_content</item>
+        <item>@string/title_service_sua_dienlanh_content</item>
+        <item>@string/title_service_sua_dientu_content</item>
+        <item>@string/title_service_sua_dogiadung_content</item>
+        <item>@string/title_service_sua_dogo_content</item>
+        <item>@string/title_service_sua_nha_content</item>
+        <item>@string/title_service_sua_diennuoc_content</item>
+        <item>@string/title_service_sua_dienlanh_content</item>
+        <item>@string/title_service_sua_dientu_content</item>
+        <item>@string/title_service_sua_dogiadung_content</item>
+        <item>@string/title_service_sua_dogo_content</item>
+        <item>@string/title_service_sua_nha_content</item>
+        <item>@string/title_service_sua_diennuoc_content</item>
+        <item>@string/title_service_sua_dienlanh_content</item>
+        <item>@string/title_service_sua_dientu_content</item>
+        <item>@string/title_service_sua_dogiadung_content</item>
+        <item>@string/title_service_sua_dogo_content</item>
+    </string-array>
+
+
+    <string-array name="array_rating_level">
+        <item>@string/title_rating_level_1</item>
+        <item>@string/title_rating_level_2</item>
+        <item>@string/title_rating_level_3</item>
+        <item>@string/title_rating_level_4</item>
+        <item>@string/title_rating_level_5</item>
+    </string-array>
+
+</resources>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lout_container"
+        layout="@layout/app_bar_back" />
+
+    <LinearLayout
+        android:id="@+id/lout_container_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_input_text_h"
+        android:layout_below="@+id/lout_container"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_renter_list"
+            style="@style/CusButtonTheme"
+            android:layout_weight="1"
+            android:background="@drawable/selector_yellow_false"
+            android:text="@string/btn_tools_lease_list"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_renter"
+            style="@style/CusButtonTheme"
+            android:layout_weight="1"
+            android:background="@drawable/selector_yellow_false"
+            android:text="@string/btn_tools_lease_renter"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_history"
+            style="@style/CusButtonTheme"
+            android:layout_weight="1"
+            android:background="@drawable/selector_yellow_false"
+            android:text="@string/btn_tools_lease_history"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:layout_below="@+id/lout_container_title"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_message_empty"
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_input_text_h"
+        android:layout_marginLeft="0dp"
+        android:gravity="center"
+        android:text="@string/title_message_empty_my_book"
+        android:visibility="gone" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_line">
+
+        <ListView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_gray"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@null"
+            android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_gravity="bottom|right"-->
+    <!--android:layout_margin="@dimen/fab_margin"-->
+    <!--android:src="@drawable/ic_plus"-->
+    <!--app:backgroundTint="@color/color_yellow"-->
+    <!--app:layout_anchor="@id/my_recycler_view"-->
+    <!--app:layout_anchorGravity="bottom|right|end" />-->
+</RelativeLayout>

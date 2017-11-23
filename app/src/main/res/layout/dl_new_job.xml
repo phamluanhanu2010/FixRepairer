@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lout_container_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_transparent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_transparent_yellow_dark">
+
+
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="@dimen/size_icon_in_app_menu"
+                android:layout_height="@dimen/size_icon_in_app_menu"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_text_app_title"
+                android:layout_alignParentRight="true" />
+
+            <ProgressBar
+                android:id="@+id/progb_avatar_timer"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="@dimen/size_icon_in_app_menu"
+                android:layout_height="@dimen/size_icon_in_app_menu"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/tv_title_timer"
+                style="@style/CusTextViewTitleTheme"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/progb_avatar_timer"
+                android:gravity="center"
+                android:text="Đóng trong vòng 5 giây"
+                android:layout_toLeftOf="@+id/progb_avatar_timer" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lout_container_timer"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/control_input_text_h">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/confirm_ui_padding_h">
+
+
+            <RelativeLayout
+                android:id="@+id/lout_container_network"
+                style="@style/CusBase.style.size"
+                android:layout_width="match_parent"
+                android:background="@drawable/ripple_selector_gray_square">
+
+                <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+                    android:id="@+id/img_avatar_network"
+                    android:layout_width="@dimen/size_icon_in_app"
+                    android:layout_height="@dimen/size_icon_in_app"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+                    android:src="@drawable/ic_calendar" />
+
+                <TextView
+                    android:id="@+id/tv_date_time"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/img_avatar_network"
+                    android:text="Tue, 22 Apr 10:20 pm"
+                    android:layout_toRightOf="@+id/img_avatar_network" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lout_container_service"
+                style="@style/CusBase.style.size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lout_container_network"
+                android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+                android:layout_marginRight="@dimen/confirm_ui_padding_w"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:background="@drawable/background_border_while"
+                android:padding="5.0dp">
+
+                <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+                    android:id="@+id/img_avatar_service"
+                    android:layout_width="@dimen/size_icon_in_app_menu"
+                    android:layout_height="@dimen/size_icon_in_app_menu"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_suadiennuoc" />
+
+                <TextView
+                    android:id="@+id/tv_title_job"
+                    style="@style/CusTextViewTitleTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/confirm_ui_padding_w"
+                    android:layout_toEndOf="@+id/img_avatar_service"
+                    android:text="Sửa ống nước phòng vệ sinh"
+                    android:textStyle="normal"
+                    android:layout_toRightOf="@+id/img_avatar_service" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lout_container_address"
+                style="@style/CusBase.style.size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lout_container_service"
+                android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+                android:layout_marginRight="@dimen/confirm_ui_padding_w"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:background="@drawable/background_border_while"
+                android:padding="5.0dp">
+
+                <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+                    android:id="@+id/img_avatar_address"
+                    android:layout_width="@dimen/size_icon_in_app_menu"
+                    android:layout_height="@dimen/size_icon_in_app_menu"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_location" />
+
+                <TextView
+                    android:id="@+id/tv_title_address"
+                    style="@style/CusTextViewTitleTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/img_avatar_address"
+                    android:text="23 Lạc Trung, Hai Bà Trưng (0.8km - 1.2km)"
+                    android:textStyle="normal"
+                    android:layout_toRightOf="@+id/img_avatar_address" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lout_container_phone_num"
+                style="@style/CusBase.style.size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lout_container_address"
+                android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+                android:layout_marginRight="@dimen/confirm_ui_padding_w"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:background="@drawable/background_container"
+                android:padding="5.0dp">
+
+                <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+                    android:id="@+id/img_avatar_phone_num"
+                    android:layout_width="@dimen/size_icon_in_app_menu"
+                    android:layout_height="@dimen/size_icon_in_app_menu"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_call" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/CusTextViewTitleTheme"
+                    android:layout_toEndOf="@+id/img_avatar_phone_num"
+                    android:text="Hoàng Hà"
+                    android:textStyle="normal"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_avatar_phone_num" />
+
+                <TextView
+                    android:id="@+id/tv_phone_num"
+                    style="@style/CusTextViewTitleTheme"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_toEndOf="@+id/img_avatar_phone_num"
+                    android:text="(+84) 94 818 77 99"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/img_avatar_phone_num" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lout_container_description"
+                style="@style/CusBase.style.size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lout_container_phone_num"
+                android:layout_margin="@dimen/confirm_ui_padding_w"
+                android:background="@drawable/background_border_while"
+                android:padding="5.0dp">
+
+                <com.strategy.intecom.vtc.fixrepairer.view.custom.imagecus.ImageViewSize
+                    android:id="@+id/img_avatar_depcription"
+                    android:layout_width="@dimen/size_icon_in_app_menu"
+                    android:layout_height="@dimen/size_icon_in_app_menu"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_ghichu" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/img_avatar_depcription"
+                    android:text="Nước rò rỉ, vòi xịt nước có thể phải thay...."
+                    android:layout_toRightOf="@+id/img_avatar_depcription" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_image_view_page"
+                android:layout_below="@+id/lout_container_description"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_backgroud_splash" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lout_container_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_transparent_back">
+
+
+        <Button
+            android:id="@+id/btn_accept_job"
+            style="@style/CusButtonTheme"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_selector_yellow_square"
+            android:drawableLeft="@mipmap/ic_accept"
+            android:paddingLeft="@dimen/confirm_ui_padding_w"
+            android:text="@string/btn_new_job_accept" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/CusButtonTheme"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_selector_gray_square"
+            android:drawableLeft="@mipmap/ic_cancel"
+            android:paddingLeft="@dimen/confirm_ui_padding_w"
+            android:text="@string/btn_new_job_cancel" />
+    </LinearLayout>
+
+
+</RelativeLayout>

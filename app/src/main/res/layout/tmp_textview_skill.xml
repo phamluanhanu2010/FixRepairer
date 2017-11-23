@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_service_content"
+    style="@style/CusTextViewContentTheme"
+    android:layout_below="@+id/tv_title_service"
+    android:padding="@dimen/confirm_ui_padding_w"
+    android:text="Thợ sửa ống nước" />

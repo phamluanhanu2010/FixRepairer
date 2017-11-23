@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/control_input_text_h"
+    android:background="@color/color_gray"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/CusTextViewTitleTheme"
+        android:gravity="center_vertical"
+        android:text="@string/title_tools_lease_total" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/CusTextViewTitleTheme"
+        android:layout_width="match_parent"
+        android:gravity="center|right"
+        android:text="80,000" />
+</LinearLayout>

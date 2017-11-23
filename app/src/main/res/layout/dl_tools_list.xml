@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/CusButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:text="Danh sách công cụ"
+        android:textSize="@dimen/size_text_app_title"
+        android:textStyle="bold" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lout_container_button"
+        android:layout_below="@+id/tv_title">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/lout_container_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_transparent_back"
+        android:padding="2.0dp"
+        android:paddingBottom="5.0dp"
+        android:paddingTop="5.0dp">
+
+        <Button
+            android:id="@+id/btn_suado"
+            style="@style/CusButtonTheme"
+            android:layout_marginRight="2.0dp"
+            android:layout_weight="1"
+            android:text="@string/btn_new_job_accept" />
+
+        <Button
+            android:id="@+id/btn_thuedo"
+            style="@style/CusButtonTheme"
+            android:layout_marginLeft="2.0dp"
+            android:layout_weight="1"
+            android:text="@string/btn_new_job_cancel" />
+    </LinearLayout>
+
+
+</RelativeLayout>

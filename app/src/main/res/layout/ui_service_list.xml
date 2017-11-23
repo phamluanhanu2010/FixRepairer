@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />-->
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/lout_container_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2.0dp"
+        android:paddingBottom="5.0dp"
+        android:paddingTop="5.0dp">
+
+
+        <Button
+            style="@style/CusButtonTheme"
+            android:id="@+id/btn_suado"
+            android:layout_marginRight="2.0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:text="@string/btn_service_list_suado" />
+
+        <Button
+            style="@style/CusButtonTheme"
+            android:id="@+id/btn_thuedo"
+            android:layout_marginLeft="2.0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_menu_manage"
+            android:text="@string/btn_service_list_thuedo"/>
+    </LinearLayout>
+</LinearLayout>

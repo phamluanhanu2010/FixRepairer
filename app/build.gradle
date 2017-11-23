@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.strategy.intecom.vtc.fixrepairer"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.1"
+        multiDexEnabled = true
+    }
+
+
+    sourceSets {
+        main {
+            assets.srcDir("assets")
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    //noinspection GradleCompatible
+    compile 'com.android.support:support-v4:19.1.0'
+
+    // Service Google
+    compile 'com.google.android.gms:play-services:7.8.0'
+
+    compile 'com.android.support:design:23.3.0'
+
+    compile 'com.android.support:multidex:1.0.0'
+
+    // Thư viện hiển thị ảnh và video
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+//    compile 'com.facebook.android:facebook-android-sdk:4.4.+'
+
+    // Thư viện View Paging cho thư viện ảnh
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+
+    compile project(path: ':libraryQuickRT1')
+
+    // Thư viện Socket
+    compile ('io.socket:socket.io-client:0.7.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+
+    //Test
+//    compile files('libs/classes.jar')
+//    compile files('libs/settings.jar')
+
+
+//    compile files('libs/VTCSdkLib-release.aar')
+//    compile(name:'release', ext:'aar')
+
+//    compile 'com.strategy.intecom.vtc.vtclogin.login:VTCSdkLib-release-1@aar'
+//    compile 'com.strategy.intecom.vtc.vtclib:VTCTracking-release@aar'
+}

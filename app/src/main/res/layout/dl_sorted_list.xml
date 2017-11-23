@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_selector"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5.0dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/title_sort_by_title"
+        android:textSize="@dimen/size_text_app_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_sort_all"
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/title_sort_by_all"
+        android:textSize="@dimen/size_text_app_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_sort_new"
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/title_sort_by_new"
+        android:textSize="@dimen/size_text_app_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_sort_nearby"
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/confirm_ui_padding_w"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/title_sort_by_nearby"
+        android:textSize="@dimen/size_text_app_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/CusButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/confirm_ui_padding_w"
+        android:background="@android:color/transparent"
+        android:text="@string/btn_new_job_cancel" />
+
+</LinearLayout>
+

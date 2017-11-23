@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_backgroud_splash"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.strategy.intecom.vtc.fixrepairer.view.UIConfirmInfoProfile">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_back"
+        android:fillViewport="true"
+        android:isScrollContainer="true">
+
+        <RelativeLayout
+            android:id="@+id/lout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/confirm_ui_padding_h"
+            android:paddingLeft="@dimen/confirm_ui_padding_w"
+            android:paddingRight="@dimen/confirm_ui_padding_w">
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/confirm_ui_button_option"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/confirm_ui_padding_w"
+                android:src="@drawable/ic_banner" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/CusTextViewContentTheme"
+                android:layout_below="@+id/img_avatar"
+                android:layout_marginBottom="@dimen/confirm_ui_padding_w"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:gravity="center"
+                android:text="@string/confirm_signin_welcome"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/lout_container_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginTop="@dimen/confirm_ui_padding_h">
+
+
+                <EditText
+                    android:id="@+id/edt_full_name"
+                    style="@style/CusEditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:hint="@string/confirm_info_profile_full_name"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:nextFocusRight="@+id/edt_cmtnd"
+                    android:paddingLeft="@dimen/confirm_ui_padding_w" />
+
+                <requestFocus />
+
+                <EditText
+                    android:id="@+id/edt_cmtnd"
+                    style="@style/CusEditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/confirm_info_profile_cmnd"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:paddingLeft="@dimen/confirm_ui_padding_w" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/edt_address"
+                style="@style/CusEditTextTheme"
+                android:layout_below="@+id/lout_container_name"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:hint="@string/title_tools_lease_address"
+                android:paddingLeft="@dimen/confirm_ui_padding_w" />
+
+            <EditText
+                android:id="@+id/edt_phone_num"
+                style="@style/CusEditTextTheme"
+                android:layout_below="@+id/edt_address"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:hint="@string/confirm_info_profile_phone_num"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="@dimen/confirm_ui_padding_w" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                style="@style/CusEditTextTheme"
+                android:layout_below="@+id/edt_phone_num"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:hint="@string/confirm_info_profile_email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/confirm_ui_padding_w" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                style="@style/CusEditTextTheme"
+                android:layout_below="@+id/edt_email"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:hint="@string/confirm_signin_button_password"
+                android:inputType="textPassword"
+                android:maxLength="32"
+                android:paddingLeft="@dimen/confirm_ui_padding_w" />
+
+            <EditText
+                android:id="@+id/edt_re_password"
+                style="@style/CusEditTextTheme"
+                android:layout_below="@+id/edt_password"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:hint="@string/confirm_signin_button_re_password"
+                android:inputType="textPassword"
+                android:maxLength="32"
+                android:paddingLeft="@dimen/confirm_ui_padding_w" />
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/lout_container_spinner"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/edt_re_password"-->
+            <!--android:layout_marginTop="@dimen/confirm_ui_padding_w"-->
+            <!--android:paddingBottom="5.0dp"-->
+            <!--android:paddingTop="5.0dp">-->
+
+
+            <!--<Spinner-->
+            <!--android:id="@+id/tv_cities"-->
+            <!--style="@style/CusEditTextTheme"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_marginRight="5.0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/ripple_selector_gray"-->
+            <!--android:hint="@string/confirm_info_profile_city" />-->
+
+
+            <!--<Spinner-->
+            <!--android:id="@+id/tv_district"-->
+            <!--style="@style/CusEditTextTheme"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_marginLeft="5.0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/ripple_selector_gray"-->
+            <!--android:hint="@string/confirm_info_profile_district" />-->
+
+            <!--</LinearLayout>-->
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/CusButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/edt_re_password"
+                android:layout_marginTop="10.0dp"
+                android:background="@drawable/ripple_selector_yellow"
+                android:text="@string/confirm_signin_button_next"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/size_icon_in_app_menu"
+        android:layout_height="@dimen/size_icon_in_app"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+        android:layout_marginTop="@dimen/confirm_ui_padding_h"
+        android:paddingRight="@dimen/confirm_ui_padding_h"
+        android:src="@drawable/ic_back_while" />
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lout_container_rule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_total_depcription"
+            style="@style/CusTextViewContentTheme"
+            android:layout_marginTop="@dimen/confirm_ui_padding_w"
+            android:text="@string/title_upgrade_level_total_description" />
+
+        <LinearLayout
+            android:id="@+id/lout_container_title_job"
+            style="@style/CusBase.style.size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/control_input_text_h"
+            android:layout_marginTop="@dimen/confirm_ui_padding_w"
+            android:background="@color/color_gray"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/CusTextViewTitleTheme"
+                android:layout_weight="1"
+                android:text="@string/confirm_info_profile_name"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/CusTextViewTitleTheme"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/title_upgrade_level_total_bonus_score"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <com.strategy.intecom.vtc.fixrepairer.view.custom.listcontent.ListViewWrapContent
+            android:id="@+id/lv_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0.5sp" />
+
+        <LinearLayout
+            android:id="@+id/lout_container_title_level"
+            style="@style/CusBase.style.size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/control_input_text_h"
+            android:layout_marginTop="@dimen/confirm_ui_padding_w"
+            android:background="@color/color_gray"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/CusTextViewTitleTheme"
+                android:layout_weight="1"
+                android:text="@string/title_upgrade_level"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/CusTextViewTitleTheme"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/title_upgrade_level_point"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <com.strategy.intecom.vtc.fixrepairer.view.custom.listcontent.ListViewWrapContent
+            android:id="@+id/lv_jule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0.5sp" />
+    </LinearLayout>
+</ScrollView>
